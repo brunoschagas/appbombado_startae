@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem "appbombado_startae", "~> 0.0.6"
+    gem "appbombado_startae", "~> 0.0.7"
 
 And then execute:
 
@@ -21,7 +21,7 @@ Or install it yourself as:
   rails new <nomedoapp>
 
   insira na Gemfile:
-      gem "appbombado_startae", "~> 0.0.6"
+      gem "appbombado_startae", "~> 0.0.7"
 
   bundle install
 

@@ -57,7 +57,7 @@ def generate_appbombado
 
   run "rails g controller home index"
 
-  route "root 'home#index"
+  route "root 'home#index'"
 
   end
 
