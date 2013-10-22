@@ -54,5 +54,10 @@ def generate_appbombado
   run "bower install bourbon"
   run "bower install animate.css"
 
+  run "rails g controller home index"
+
+  remove_file "config/routes.rb"
+  copy_file "routes.rb", "config/routes.rb"
+
   end
 end
