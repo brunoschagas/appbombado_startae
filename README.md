@@ -20,14 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-  rails new '<nomedoapp>'
+  rails new 'nome_do_app'
 
-  insira na Gemfile:
-      gem "appbombado_startae", "~> 0.0.8"
+
+  Gemfile -> gem "appbombado_startae", "~> 0.0.8"
+
 
   bundle install
 
-  rails g appbombado '<nomedoapp>'
+  rails g appbombado 'nome_do_app'
 
 ## Contributing
 
