@@ -57,8 +57,7 @@ def generate_appbombado
 
   run "rails g controller home index"
 
-  remove_file "config/routes.rb"
-  copy_file "routes.rb", "config/routes.rb"
+  route "root 'home#index"
 
   end
 
