@@ -1,8 +1,8 @@
 Description:
-    Explain the generator
+    Explain the generator app bombado
 
 Example:
-    rails generate appbombado Thing
+    rails generate appbombado Thing app bombado
 
     This will create:
         what/will/it/create
