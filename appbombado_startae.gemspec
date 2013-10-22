@@ -1,23 +1,23 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'appbombado_startae/version'
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+require "appbombado_startae/version"
 
-Gem::Specification.new do |spec|
-  spec.name          = "appbombado_startae"
-  spec.version       = AppbombadoStartae::VERSION
-  spec.authors       = ["Bruno Santos Chagas"]
-  spec.email         = ["brunoprimo@gmail.com"]
-  spec.description   = %q{gem para gerar ap bombado}
-  spec.summary       = %q{gem para gerar ap startae}
-  spec.homepage      = "http://bschagas.com.br"
-  spec.license       = "MIT"
+Gem::Specification.new do |s|
+  s.name        = "appbombado_startae"
+  s.version     = AppbombadoStartae::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Bruno Santos Chagas"]
+  s.email       = ["brunoprimo@gmail.com"]
+  s.homepage    = ""
+  s.summary     = %q{App Bombando generator.}
+  s.description = %q{Bombando seu app startae.}
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  s.add_development_dependency "rspec"
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  s.rubyforge_project = "appbombado_startae"
+
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
 end
