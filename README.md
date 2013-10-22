@@ -23,6 +23,8 @@ Or install it yourself as:
   insira na Gemfile:
       gem "appbombado_startae", "~> 0.0.2"
 
+  bundle install
+
   rails g appbombado
 
 ## Contributing
