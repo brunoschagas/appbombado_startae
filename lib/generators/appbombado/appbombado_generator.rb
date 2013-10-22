@@ -5,27 +5,25 @@ def generate_appbombado
 
   remove_file "Gemfile"
   copy_file "Gemfile"
-  inside Rails.root do
-      run "bundle install"
-  end
+  run "bundle install"
+
   remove_file "config/database.yml"
   copy_file "database.yml", "config/database.yml"
-
-  inside Rails.root do
-      run "rake db:create"
-  end
-
-  run "rails g simple_form:install --bootstrap"
-  remove_file "config/initializers/simple_form_bootstrap.rb"
-  copy_file "simple_form_bootstrap.rb", "config/initializers/simple_form_bootstrap.rb"
+  run "rake db:create"
 
   copy_file ".bowerrc"
+
   run "bundle exec guard init"
+
+  run "rails g start:slim"
+
   run "rails g start:heroku"
   run "rails g start:heroku_wake_up"
-  run "rails g start:locales"
-  run "rails g start:slim"
   run "rails g start:unicorn"
+
+  run "rails g start:locales"
+
+
   application do
    "config.i18n.default_locale = 'pt-BR'
     config.time_zone = 'Brasilia'
@@ -36,6 +34,10 @@ def generate_appbombado
       g.test_framework    nil
     end"
   end
+
+  run "rails g simple_form:install --bootstrap"
+  remove_file "config/initializers/simple_form_bootstrap.rb"
+  copy_file "simple_form_bootstrap.rb", "config/initializers/simple_form_bootstrap.rb"
 
   remove_file "app/views/layouts/application.html.erb"
   copy_file "application.html.slim", "app/views/layouts/application.html.slim"
