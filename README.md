@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'appbombado_startae'
+    gem 'appbombado_startae', git: 'git://github.com/brunoprimo/appbombado_startae'
 
 And then execute:
 
@@ -18,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+  rails new <nomedoapp>
+
+  insira na Gemfile:
+      gem 'appbombado_startae', git: 'git://github.com/brunoprimo/appbombado_startae'
+
+  rails g appbombado
 
 ## Contributing
 

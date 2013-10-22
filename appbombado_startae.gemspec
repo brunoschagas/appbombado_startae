@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = AppbombadoStartae::VERSION
   spec.authors       = ["Bruno Santos Chagas"]
   spec.email         = ["brunoprimo@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{gem para gerar ap bombado}
+  spec.summary       = %q{gem para gerar ap startae}
+  spec.homepage      = "http://bschagas.com.br"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
