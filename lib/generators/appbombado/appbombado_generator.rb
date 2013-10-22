@@ -9,7 +9,7 @@ def generate_appbombado
   run "bundle install"
 
   remove_file "config/database.yml"
-  copy_file "database.yml", "config/database.yml"
+  template "database.yml", "config/database.yml"
   run "rake db:create"
 
   copy_file ".bowerrc"
@@ -41,7 +41,7 @@ def generate_appbombado
   copy_file "simple_form_bootstrap.rb", "config/initializers/simple_form_bootstrap.rb"
 
   remove_file "app/views/layouts/application.html.erb"
-  copy_file "application.html.slim", "app/views/layouts/application.html.slim"
+  template "application.html.slim", "app/views/layouts/application.html.slim"
 
   remove_file "app/assets/javascripts/application.js"
   copy_file "application.coffee", "app/assets/javascripts/application.coffee"
