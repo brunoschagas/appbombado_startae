@@ -1,8 +1,0 @@
-Description:
-    Explain the generator app bombado
-
-Example:
-    rails generate appbombado Thing app bombado
-
-    This will create:
-        what/will/it/create

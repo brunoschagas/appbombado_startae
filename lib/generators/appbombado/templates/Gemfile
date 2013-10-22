@@ -57,6 +57,7 @@ group :development do
   gem 'start'
   gem 'guard'
   gem 'guard-livereload'
+  gem "appbombado_startae"
 end
 
 group :test, :development do

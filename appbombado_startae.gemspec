@@ -13,8 +13,6 @@ Gem::Specification.new do |s|
   s.summary     = %q{App Bombando generator.}
   s.description = %q{Bombando seu app startae.}
 
-  s.add_development_dependency "rspec"
-
   s.rubyforge_project = "appbombado_startae"
 
   s.files         = `git ls-files`.split("\n")
