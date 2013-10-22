@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "appbombado_startae/version"
-argument :app_name, :type => :string, :default => "app"
+
 
 Gem::Specification.new do |s|
   s.name        = "appbombado_startae"
