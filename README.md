@@ -1,6 +1,8 @@
 # AppbombadoStartae
 
-TODO: Write a gem description
+Versão inicial de APP para alunos Startaê
+
+.....Requer o Bower instalado.......
 
 ## Installation
 
@@ -18,14 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-  rails new <nomedoapp>
+  rails new '<nomedoapp>'
 
   insira na Gemfile:
       gem "appbombado_startae", "~> 0.0.8"
 
   bundle install
 
-  rails g appbombado <nomedoapp>
+  rails g appbombado '<nomedoapp>'
 
 ## Contributing
 
