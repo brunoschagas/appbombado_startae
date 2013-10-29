@@ -40,6 +40,8 @@ def generate_appbombado
   remove_file "config/initializers/simple_form_bootstrap.rb"
   copy_file "simple_form_bootstrap.rb", "config/initializers/simple_form_bootstrap.rb"
 
+  copy_file "better_errors.rb", "config/initializers/better_errors.rb"
+
   remove_file "app/views/layouts/application.html.erb"
   template "application.html.slim", "app/views/layouts/application.html.slim"
 
