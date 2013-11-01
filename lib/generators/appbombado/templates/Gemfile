@@ -53,10 +53,10 @@ group :development do
   gem 'binding_of_caller', '~> 0.7.1'
   gem 'xray-rails',        '~> 0.1.6'
   gem 'ffaker'
-  gem 'start'
+  gem 'start', '~> 0.0.10'
   gem 'guard'
   gem 'guard-livereload'
-  gem "appbombado_startae"
+  gem 'appbombado_startae'
 end
 
 group :test, :development do
@@ -64,10 +64,10 @@ group :test, :development do
   gem 'pry-rails',   '~> 0.3.2'
 end
 
-gem "mini_magick"
-gem "carrierwave"
-gem "fog"
-gem "mail_form"
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'fog'
+gem 'mail_form'
 gem 'redactor-rails'
 
 
