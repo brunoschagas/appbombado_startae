@@ -4,10 +4,6 @@ class AppbombadoGenerator < Rails::Generators::Base
 
 def generate_appbombado
 
-  remove_file "Gemfile.lock"
-  template "Gemfilelock", "Gemfile.lock"
- 
-  
   remove_file "Gemfile"
   copy_file "Gemfile"
   
