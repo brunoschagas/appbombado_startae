@@ -5,10 +5,11 @@ class AppbombadoGenerator < Rails::Generators::Base
 def generate_appbombado
 
   
-  run "brew install postgresql"
+  
 
   remove_file "Gemfile"
   copy_file "Gemfile"
+  run "brew install postgresql"
   run "bundle install"
 
   remove_file "config/database.yml"
