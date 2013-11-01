@@ -40,7 +40,7 @@ gem 'kaminari', '~> 0.14.1'
 
 
 # urls
-gem "friendly_id", "~> 5.0.1"
+gem 'friendly_id', '~> 5.0.1'
 
 group :production do
   gem 'rails_12factor'

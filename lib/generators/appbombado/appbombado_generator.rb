@@ -6,14 +6,11 @@ def generate_appbombado
 
   
   
-  run "rvm use 2.0"
-  
-  run "brew install postgresql"
-  
-  run "bundle update"
-  
+ 
+
   remove_file "Gemfile"
   copy_file "Gemfile"
+  run "bundle install"
   run "bundle install"
 
 
