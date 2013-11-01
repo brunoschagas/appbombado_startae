@@ -6,7 +6,7 @@ def generate_appbombado
 
   remove_file "Gemfile"
   copy_file "Gemfile"
-  run "bundle install"
+  run "bundle install --full-index"
 
   remove_file "config/database.yml"
   template "database.yml", "config/database.yml"
