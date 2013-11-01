@@ -8,7 +8,7 @@ Versão inicial de APP para alunos Startaê
 
 Add this line to your application's Gemfile:
 
-    gem "appbombado_startae", "~> 0.1.2"
+    gem "appbombado_startae", "~> 0.1.3"
 
 And then execute:
 
@@ -23,7 +23,7 @@ Or install it yourself as:
   rails new 'nome_do_app'
 
 
-  Gemfile -> gem "appbombado_startae", "~> 0.1.2"
+  Gemfile -> gem "appbombado_startae", "~> 0.1.3"
 
 
   bundle install
