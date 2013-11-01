@@ -4,13 +4,10 @@ class AppbombadoGenerator < Rails::Generators::Base
 
 def generate_appbombado
 
-  
-  
- 
-
   remove_file "Gemfile"
   copy_file "Gemfile"
-  run "bundle install"
+  run "gem install friendly_id"
+  run "gem install start"
   run "bundle install"
 
 
