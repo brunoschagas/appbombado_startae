@@ -1,3 +1,4 @@
+
 # AppbombadoStartae
 
 Versão inicial de APP para alunos Startaê
@@ -8,7 +9,7 @@ Versão inicial de APP para alunos Startaê
 
 Add this line to your application's Gemfile:
 
-    gem "appbombado_startae", "~> 0.1.16"
+    gem "appbombado_startae", "~> 0.1.17"
 
 And then execute:
 
@@ -20,19 +21,31 @@ Or install it yourself as:
 
 ## Usage
 
+  Só funciona com Ruby 2.0
+    -> rvm use 2.0
+    -> bundle update
+
+  Só funciona com Postgre
+
+    -> psql --version
+    -> brew install postgresql
+    -> initdb /usr/local/var/postgres
+    -> pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+
+
   rails new 'nome_do_app'
 
-  rvm use 2.0
-  
-  brew install postgresql
-  
-  bundle update
+  Gemfile 
+    -> gem "appbombado_startae", "~> 0.1.17"
 
-  Gemfile -> gem "appbombado_startae", "~> 0.1.16"
+  -> bundle install
+  -> rails g appbombado 'nome_do_app'
 
-  bundle install
 
-  rails g appbombado 'nome_do_app'
+  obs: se der erro de Gem- rode 
+    -> bundle install 
+    -> rails g appbombado 'nome_do_app'
+
 
 ## Contributing
 
