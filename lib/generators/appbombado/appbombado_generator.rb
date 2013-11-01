@@ -6,9 +6,9 @@ def generate_appbombado
 
   remove_file "Gemfile"
   copy_file "Gemfile"
-  run "gem install friendly_id"
-  run "gem install start"
-  run "bundle install"
+  inside Rails.root do
+      run "bundle install"
+    end
 
 
   remove_file "config/database.yml"
