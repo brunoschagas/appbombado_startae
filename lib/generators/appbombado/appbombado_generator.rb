@@ -6,13 +6,16 @@ def generate_appbombado
 
   
   
-
+  run "rvm use 2.0"
+  
+  run "brew install postgresql"
+  
+  run "bundle update"
+  
   remove_file "Gemfile"
   copy_file "Gemfile"
-  run "brew install postgresql"
   run "bundle install"
-  run "bundle install"
-  
+
 
   remove_file "config/database.yml"
   template "database.yml", "config/database.yml"
