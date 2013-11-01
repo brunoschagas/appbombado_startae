@@ -4,11 +4,14 @@ class AppbombadoGenerator < Rails::Generators::Base
 
 def generate_appbombado
 
+  remove_file "Gemfile.lock"
+  copy_file "Gemfile.lock"
+  
   remove_file "Gemfile"
   copy_file "Gemfile"
-  inside Rails.root do
-      run "bundle install"
-    end
+  
+  run "bundle install"
+   
 
 
   remove_file "config/database.yml"
