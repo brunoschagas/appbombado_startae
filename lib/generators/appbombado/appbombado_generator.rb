@@ -11,6 +11,8 @@ def generate_appbombado
   copy_file "Gemfile"
   run "brew install postgresql"
   run "bundle install"
+  run "bundle install"
+  
 
   remove_file "config/database.yml"
   template "database.yml", "config/database.yml"
