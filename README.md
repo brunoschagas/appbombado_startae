@@ -26,7 +26,7 @@
 
   Gemfile 
     
-    gem "appbombado_startae", "~> 0.1.17"
+    gem "appbombado_startae", "~> 0.1.8"
 
   Agora VAI! 
     

@@ -7,6 +7,7 @@ def generate_appbombado
   remove_file "Gemfile"
   copy_file "Gemfile"
   
+  run "bundle update"
   run "bundle install"
    
 
